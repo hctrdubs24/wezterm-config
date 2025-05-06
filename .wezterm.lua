@@ -3,9 +3,8 @@ local config = {}
 
 -- THEME: Rosé Pine for WezTerm by neapsix
 -- Source: https://github.com/neapsix/wezterm
-local theme = wezterm.plugin.require("https://github.com/neapsix/wezterm").main
-config.colors = theme.colors()
-config.window_frame = theme.window_frame()
+local theme = require("themes.themes")
+config.colors = theme.kanagawa
 
 -- WINDOW: Startup behavior
 local mux = wezterm.mux
